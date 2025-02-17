@@ -33,7 +33,7 @@ function routeByHosts(host) {
 async function handleRequest(request) {
   const url = new URL(request.url);
   if (url.pathname === '/test') {
-      return new Response('OK');
+      return new Response('<h3>testing OK</h3>');
   }
   const upstream = routeByHosts(url.hostname);
   if (upstream === "") {
