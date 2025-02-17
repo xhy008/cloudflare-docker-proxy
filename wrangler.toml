@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "libcuda.so"
+CUSTOM_DOMAIN = "pass-gfw.top"
 
 [env.dev.vars]
 MODE = "debug"
@@ -37,3 +37,7 @@ name = "cloudflare-docker-proxy-staging"
 [env.staging.vars]
 MODE = "staging"
 TARGET_UPSTREAM = ""
+
+[observability]
+enabled = true
+head_sampling_rate = 1 # optional. default = 1.
